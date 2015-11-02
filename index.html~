@@ -152,37 +152,24 @@
      <dl>
 	     <dt></dt>
 	     <dd></dd>
-	     <dt></dt>
-	     <dt></dt>
-	     <dd></dd>
-	     <dt></dt>
-	     <dd></dd>
-	     <dt></dt>
-	     <dd></dd>
-	     <dt></dt>
-	     <dt></dt>
-	     <dd></dd>
-	     <dd></dd>
-	     <dd></dd>
-     </dl>
      <dt>tar cf file.tar files</dt>
      <dd>- create a tar named file.tar containing files</dd>
-<dt>tar xf file.tar</dt>
-<dd>- extract the files from file.tar</dd>
-<dt>tar czf file.tar.gz files</dt>
-<dd>- create a tar with Gzip compression</dd>
-<dt>tar xzf file.tar.gz</dt>
-<dd>- extract a tar using Gzip</dd>
-<dt>tar cjf file.tar.bz2</dt>
-<dd>- create a tar with Bzip2 compression</dd>
-<dt>tar xjf file.tar.bz2</dt>
-<dd>- extract a tar using Bzip2</dd>
-<dt>gzip file.</dd>
-<dd>- compresses file and renames it to file.gz
-<dt>gzip -d file.gz</dt>
-<dd>- decompresses file.gz back to file</dd>
+	<dt>tar xf file.tar</dt>
+	<dd>- extract the files from file.tar</dd>
+	<dt>tar czf file.tar.gz files</dt>
+	<dd>- create a tar with Gzip compression</dd>
+	<dt>tar xzf file.tar.gz</dt>
+	<dd>- extract a tar using Gzip</dd>
+	<dt>tar cjf file.tar.bz2</dt>
+	<dd>- create a tar with Bzip2 compression</dd>
+	<dt>tar xjf file.tar.bz2</dt>
+	<dd>- extract a tar using Bzip2</dd>
+	<dt>gzip file.</dd>
+	<dd>- compresses file and renames it to file.gz
+	<dt>gzip -d file.gz</dt>
+	<dd>- decompresses file.gz back to file</dd>
 
-
+</dl>
 
   </body>
 </html>
