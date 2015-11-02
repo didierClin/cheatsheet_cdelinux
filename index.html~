@@ -10,8 +10,7 @@
     <h1 id="entete">Les commandes linux</h1>
     <div class="cde">
       <p>
-      <h2> Les commandes sur fichiers. </h2>
-      <dl>
+      <ul>
 <dt>ls</dt>
 <dd>- directory listing</dd>
 <dt>ls -al</dt>
@@ -37,7 +36,7 @@
 <dt>cp -r dir1 dir2</dt>
 <dd>- copy dir1 to dir2 ; create dir2 if it doesn't exist</dd>
 <dt>mv file1 file2</dt>
-<dd> - rename or move file1 to file2</dd>
+<dt> - rename or move file1 to file2<//dd>
 <dd> - if file2 is an existing directory, </dt>
 <dd> - moves file1 into directory file2</dd>
 <dt>ln -s file link</dt>
@@ -54,48 +53,10 @@
 <dd>- output the last 10 lines of file</dd>
 <dt>tail -f file</dt>
 <dd>- output the contents of file as it</dd>
-</dl>
-
-<h2>Gerer les process</h2>
-<dl>
-<dt>ps</dt>
-<dd>– display your currently active processes</dd>
-<dt>top</dt>
-<dd>– display all running processes</dd>
-<dt>kill pid</dt>
-<dd> – kill process id pid</dd>
-<dt>killall proc</dt>
-<dd>– kill all processes named proc</dd>
-<dt>bg</dt>
-<dd>– lists stopped or background jobs;</dd>
- resume a stopped job in the background</dd>
-<dt>fg</dt>
-<dd>brings the most recent job to foreground</dd>
-<dt>fg n</dt>
-</dl>
-
-<h2> </h2>
-<dt></dt>
-<dd></dd>
-<dt></dt>
-<dd></dd>
-<dt></dt>
-<dd></dd>
-<dt></dt>
-<dd></dd>
-<dt></dt>
-<dd></dd>
-<dt></dt>
-<dd></dd>
+</ul>
       </p>
     </p>
 
-
-    fg
-     –
-    fg
-    n
-     –
 
   </body>
 </html>
