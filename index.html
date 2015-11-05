@@ -1,128 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Les commandes linux</title>
-    <script type="text/javascript" src="js/app.js"></script>
-    <link href="web/css/app.css" rel="stylesheet" type="text/css"  />
-  </head>
-  <body>
-    <h1 id="entete">Les commandes linux</h1>
-    <div class="cde">
-      <p>
+
+<head>
+  <meta charset="utf-8">
+  <title>Les commandes linux</title>
+  <script type="text/javascript" src="js/app.js"></script>
+  <link href="web/css/app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 id="entete">Les commandes linux</h1>
+  <div class="cde">
+    <p>
       <h2> Les commandes sur fichiers. </h2>
       <dl>
-<dt>ls</dt>
-<dd>- directory listing</dd>
-<dt>ls -al</dt>
-<dd>- formatted listing with hidden files</dd>
-<dt>cd dir</dt>
-<dd>- change directory to</dd>
-<dt>dir cd</dt>
-<dd>- change to home</dd>
-<dt>pwd</dt>
-<dd>- show current directory</dd>
-<dt>mkdir dir</dt>
-<dd>- create a directory dir</dd>
-<dt>rm file</dt>
-<dd>- delete file</dd>
-<dt>rm -r dir</dt>
-<dd>- delete directory dir</dd>
-<dt>rm -f file</dt>
-<dd>- force remove file</dd>
-<dt>rm -rf dir</dt>
-<dd>- force remove directory dir *</dd>
-<dt>cp file1 file2</dt>
-<dd>- copy file1 to file2</dd>
-<dt>cp -r dir1 dir2</dt>
-<dd>- copy dir1 to dir2 ; create dir2 if it doesn't exist</dd>
-<dt>mv file1 file2</dt>
-<dd> - rename or move file1 to file2</dd>
-<dd> - if file2 is an existing directory, </dt>
-<dd> - moves file1 into directory file2</dd>
-<dt>ln -s file link</dt>
-<dd>- create symbolic link link to file</dd>
-<dt>touch file</dt>
-<dd>- create or update file</dd>
-<dt>cat > file</dt>
-<dd>- places standard input into file</dd>
-<dt>more file</dt>
-<dd>- output the contents of file</dd>
-<dt>head file</dt>
-<dd>- output the first 10 lines of file</dd>
-<dt>tail file</dt>
-<dd>- output the last 10 lines of file</dd>
-<dt>tail -f file</dt>
-<dd>- output the contents of file as it</dd>
-</dl>
+        <dt>ls</dt>
+        <dd>- directory listing</dd>
+        <dt>ls -al</dt>
+        <dd>- formatted listing with hidden files</dd>
+        <dt>cd dir</dt>
+        <dd>- change directory to</dd>
+        <dt>dir cd</dt>
+        <dd>- change to home</dd>
+        <dt>pwd</dt>
+        <dd>- show current directory</dd>
+        <dt>mkdir dir</dt>
+        <dd>- create a directory dir</dd>
+        <dt>rm file</dt>
+        <dd>- delete file</dd>
+        <dt>rm -r dir</dt>
+        <dd>- delete directory dir</dd>
+        <dt>rm -f file</dt>
+        <dd>- force remove file</dd>
+        <dt>rm -rf dir</dt>
+        <dd>- force remove directory dir *</dd>
+        <dt>cp file1 file2</dt>
+        <dd>- copy file1 to file2</dd>
+        <dt>cp -r dir1 dir2</dt>
+        <dd>- copy dir1 to dir2 ; create dir2 if it doesn't exist</dd>
+        <dt>mv file1 file2</dt>
+        <dd> - rename or move file1 to file2</dd>
+        <dd> - if file2 is an existing directory, </dt>
+          <dd> - moves file1 into directory file2</dd>
+          <dt>ln -s file link</dt>
+          <dd>- create symbolic link link to file</dd>
+          <dt>touch file</dt>
+          <dd>- create or update file</dd>
+          <dt>cat > file</dt>
+          <dd>- places standard input into file</dd>
+          <dt>more file</dt>
+          <dd>- output the contents of file</dd>
+          <dt>head file</dt>
+          <dd>- output the first 10 lines of file</dd>
+          <dt>tail file</dt>
+          <dd>- output the last 10 lines of file</dd>
+          <dt>tail -f file</dt>
+          <dd>- output the contents of file as it</dd>
+      </dl>
 
-<h2>Gerer les process</h2>
-<dl>
-<dt>ps</dt>
-<dd>– display your currently active processes</dd>
-<dt>top</dt>
-<dd>– display all running processes</dd>
-<dt>kill pid</dt>
-<dd> – kill process id pid</dd>
-<dt>killall proc</dt>
-<dd>– kill all processes named proc</dd>
-<dt>bg</dt>
-<dd>– lists stopped or background jobs;</dd>
- resume a stopped job in the background</dd>
-<dt>fg</dt>
-<dd>brings the most recent job to foreground</dd>
-<dt>fg n</dt>
-<dd> – brings job n  to the foreground</dd>
-</dl>
+      <h2>Gerer les process</h2>
+      <dl>
+        <dt>ps</dt>
+        <dd>– display your currently active processes</dd>
+        <dt>top</dt>
+        <dd>– display all running processes</dd>
+        <dt>kill pid</dt>
+        <dd> – kill process id pid</dd>
+        <dt>killall proc</dt>
+        <dd>– kill all processes named proc</dd>
+        <dt>bg</dt>
+        <dd>– lists stopped or background jobs;</dd>
+        resume a stopped job in the background</dd>
+        <dt>fg</dt>
+        <dd>brings the most recent job to foreground</dd>
+        <dt>fg n</dt>
+        <dd> – brings job n to the foreground</dd>
+      </dl>
 
 
 
-<h2>Permissions sur les fichiers</h2>
-<dl>
-  <dt>chmod  octal file</dt>
-  <dd>- change the permissions of file to octal,</dd>
-  <dd>- which can be found separately for user,</dd>
-  <dd>- group, and world by adding:
-      <ul>
-        <li>4 – read (r)</li>
-        <li>2 – write (w)</li>
-        <li>1 – execute (x)</li>
-        <li>Examples:
-            <ul>
-              <li>chmod 777 : read, write, execute for all,</li>
-              <li>chmod 755 : rwx for owner, rx for group and world</li>
-            </ul>
-        </li>
-      </ul>
-  </dd>
-</dl>
+      <h2>Permissions sur les fichiers</h2>
+      <dl>
+        <dt>chmod octal file</dt>
+        <dd>- change the permissions of file to octal,</dd>
+        <dd>- which can be found separately for user,</dd>
+        <dd>- group, and world by adding:
+          <ul>
+            <li>4 – read (r)</li>
+            <li>2 – write (w)</li>
+            <li>1 – execute (x)</li>
+            <li>Examples:
+              <ul>
+                <li>chmod 777 : read, write, execute for all,</li>
+                <li>chmod 755 : rwx for owner, rx for group and world</li>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+      </dl>
 
-<h2>Recherches</h2>
-<dl>
-    <dt>grep pattern files</dt>
-    <dd>– search for pattern in files</dd>
-    <dt>grep -r pattern dir</dt>
-    <dd> – search recursively for pattern in dir</dd>
-    <dt>command | grep pattern</dt>
-    <dd>– search for pattern in the output of command</dd>
-    <dt>locate file</dt>
-    <dd>– find all instances of file</dd>
-</dl>
+      <h2>Recherches</h2>
+      <dl>
+        <dt>grep pattern files</dt>
+        <dd>– search for pattern in files</dd>
+        <dt>grep -r pattern dir</dt>
+        <dd> – search recursively for pattern in dir</dd>
+        <dt>command | grep pattern</dt>
+        <dd>– search for pattern in the output of command</dd>
+        <dt>locate file</dt>
+        <dd>– find all instances of file</dd>
+      </dl>
 
-<h2>Infos système</h2>
-<dl>
-  <dt>date</dt>
-  <dd>– show the current date and time</dd>
-  <dt>cal</dt>
-  <dd> – show this month's calendar
+      <h2>Infos système</h2>
+      <dl>
+        <dt>date</dt>
+        <dd>– show the current date and time</dd>
+        <dt>cal</dt>
+        <dd> – show this month's calendar
 
-  <dt></dt>
-  <dd></dd>
-      </p>
+          <dt></dt>
+          <dd></dd>
+    </p>
     </p>
 
     <dt>uptime</dt>
-      <dd> – show current uptime</dd>
+    <dd> – show current uptime</dd>
     <dt>w</dt>
     <dd> – display who is online</dd>
     <dt>whoami</dt>
@@ -148,50 +150,51 @@
     <dt>which app</dt>
     <dd> – show which app will be run by default</dd>
 
-     <h2>Compression</h2>
-     <dl>
-	     <dt></dt>
-	     <dd></dd>
-     <dt>tar cf file.tar files</dt>
-     <dd>- create a tar named file.tar containing files</dd>
-	<dt>tar xf file.tar</dt>
-	<dd>- extract the files from file.tar</dd>
-	<dt>tar czf file.tar.gz files</dt>
-	<dd>- create a tar with Gzip compression</dd>
-	<dt>tar xzf file.tar.gz</dt>
-	<dd>- extract a tar using Gzip</dd>
-	<dt>tar cjf file.tar.bz2</dt>
-	<dd>- create a tar with Bzip2 compression</dd>
-	<dt>tar xjf file.tar.bz2</dt>
-	<dd>- extract a tar using Bzip2</dd>
-	<dt>gzip file.</dd>
-	<dd>- compresses file and renames it to file.gz
-	<dt>gzip -d file.gz</dt>
-	<dd>- decompresses file.gz back to file</dd>
+    <h2>Compression</h2>
+    <dl>
+      <dt></dt>
+      <dd></dd>
+      <dt>tar cf file.tar files</dt>
+      <dd>- create a tar named file.tar containing files</dd>
+      <dt>tar xf file.tar</dt>
+      <dd>- extract the files from file.tar</dd>
+      <dt>tar czf file.tar.gz files</dt>
+      <dd>- create a tar with Gzip compression</dd>
+      <dt>tar xzf file.tar.gz</dt>
+      <dd>- extract a tar using Gzip</dd>
+      <dt>tar cjf file.tar.bz2</dt>
+      <dd>- create a tar with Bzip2 compression</dd>
+      <dt>tar xjf file.tar.bz2</dt>
+      <dd>- extract a tar using Bzip2</dd>
+      <dt>gzip file.</dd>
+        <dd>- compresses file and renames it to file.gz
+          <dt>gzip -d file.gz</dt>
+          <dd>- decompresses file.gz back to file</dd>
 
-     </dl>
-     <h2>Raccourcis</h2>
-     <dl>
-	     <dt>Ctrl+C</dt>
-	     <dd>- halts the current command</dd>
-<dt>Ctrl+Z</dt>
-<dd>- stops the current command, resume with</dd>
-<dd>fg in the foreground or bg in the background</dd>
-<dt>Ctrl+D</dt>
-<dd>- log out of current session , similar to exit</dd>
-<dt>Ctrl+W</dt>
-<dd>- erases one word in the current line</dd>
-<dt>Ctrl+U</dt>
-<dd>- erases the whole line</dd>
-<dt>Ctrl+R</dt>
-<dd>- type to bring up a recent command</dd>
-<dt>!!  or .</dt>
-<dd>- repeats the last command</dd>
-<dt>exit</dt>
-<dd>- log out of current session</dd>
+    </dl>
+    <h2>Raccourcis</h2>
+    <dl>
+      <dt>Ctrl+C</dt>
+      <dd>- halts the current command</dd>
+      <dt>Ctrl+Z</dt>
+      <dd>- stops the current command, resume with</dd>
+      <dd>fg in the foreground or bg in the background</dd>
+      <dt>Ctrl+D</dt>
+      <dd>- log out of current session , similar to exit</dd>
+      <dt>Ctrl+W</dt>
+      <dd>- erases one word in the current line</dd>
+      <dt>Ctrl+U</dt>
+      <dd>- erases the whole line</dd>
+      <dt>Ctrl+R</dt>
+      <dd>- type to bring up a recent command</dd>
+      <dt>!! or .</dt>
+      <dd>- repeats the last command</dd>
+      <dt>exit</dt>
+      <dd>- log out of current session</dd>
 
-</dl>
+    </dl>
 
 
-  </body>
+</body>
+
 </html>
