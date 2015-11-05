@@ -1,18 +1,35 @@
 *{
   background-color: darkgray;
 }
+.bloc{
+  height: 90%;
+  width: auto;
+  background-color: green;
+  border: 1px red;
+}
 /*definir la hauteur d'affichage*/
 /*small height*/
 @media screen and (max-height: 480px){
     *{
         background-color: bisque;
     }
+    .bloc{
+      height: 90%;
+      width: auto;
+      background-color: darkgreen;
+      border: 1px pink;
+    }
 }
 /*medium height*/
 @media screen and (min-height: 481px) and (max-height: 799px){
     *{
         background-color: aqua;
-
+    }
+    .bloc{
+      height: 90%;
+      width: auto;
+      background-color: #FF6600;
+      border: 1px black;
     }
 }
 /*medium plus height*/
@@ -20,5 +37,10 @@
     *{
         background-color: bisque;
     }
-    
+    .bloc{
+      height: 90%;
+      width: auto;
+      background-color: darkgreen;
+      border: 1px red;
+    }
 }
