@@ -1,49 +1,82 @@
 body{
-  background-color: darkgray;
+  background-color: #A2CBE8;
   height: 100%;
 }
 .bloc{
   min-height: 100%;
   width: auto;
-  background-color: green;
+  background-color: #4598FF;
+  border-radius: 0.15em;
 }
+h1{
+  
+}
+/* Work on title section */
 h2{
   text-align: center;
-  width: 50%;
-  background-color: orange;
+  line-height: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 1em;
+}
+/* WOrk on def item on DList*/
+dl{
+  display: inline;
 }
 dt{
+
   width: 33%;
 }
 dd{
   width: 33%;
 }
-/*definir la hauteur d'affichage*/
-/*small height*/
-@media screen and (max-height: 480px){
+/*definir la hauteur d'affichage  -- passage en width*/
+/*small width*/
+@media screen and (max-width: 479px){
     body{
         background-color: bisque;
     }
     .bloc{
       background-color: darkgreen;
     }
+    dt{
+      width: 100%;
+    }
+    dd{
+      width: 100%;
+    }
+
 }
-/*medium height*/
-@media screen and (min-height: 481px) and (max-height: 799px){
+/*medium width*/
+@media screen and (min-width: 480x) and (max-width: 799px){
     body{
         background-color: aqua;
     }
     .bloc{
       background-color: #FF6600;
     }
+    dt{
+      width: 100%;
+    }
+    dd{
+      width: 100%;
+    }
 }
-/*medium plus height*/
-@media screen and (min-height: 800px) and (max-height: 1000px){
+/*medium plus width*/
+@media screen and (min-width: 800px) and (max-width: 1000px){
     body{
         background-color: bisque;
     }
     .bloc{
       background-color: darkgreen;
       border: 1px red;
+    }
+    dt{
+      width: 50%;
+    }
+    dd{
+      width: 50%;
     }
 }

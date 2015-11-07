@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -13,18 +13,26 @@
   <h1 id="entete">Les commandes linux</h1>
 
   <section>
-    <nav>
-        <li><a href="#CF">Commandes sur fichiers</a></li>
-        <li><a href="#GP">Gerer les process</a></li>
-        <li><a href="#PF">Permissions sur les fichiers</a></li>
-        <li><a href="#RC">Recherches</a></li>
-        <li><a href="#IS">Infos système</a></li>
-        <li><a href="#CP">Compression</a></li>
-        <li><a href="#RS">Raccourcis</a></li>
+    <nav id="top">
+      <li><a href="#CF">Commandes sur fichiers</a></li>
+      <li><a href="#GP">Gerer les process</a></li>
+      <li><a href="#PF">Permissions sur les fichiers</a></li>
+      <li><a href="#RC">Recherches</a></li>
+      <li><a href="#IS">Infos système</a></li>
+      <li><a href="#CP">Compression</a></li>
+      <li><a href="#RS">Raccourcis</a></li>
     </nav>
   </section>
   <section class="bloc" id="CF">
-
+    <a href="#entete">
+      <img src="web/img/top.png" alt="retour_haut" title="Top"/>
+    </a>
+    <a href="#entete">
+      <img src="web/img/vers-haut.png" alt="retour_precedent" title="Top"/>
+    </a>
+    <a href="#GP">
+      <img src="web/img/vers-bas.png" alt="suite" title="Gerer les process"/>
+    </a>
     <h2> Les commandes sur fichiers. </h2>
     <dl>
       <dt>ls</dt>
@@ -73,7 +81,18 @@
   </section>
 
   <section class="bloc" id="GP">
-    <h2>Gerer les process</h2>
+    <a href="#entete">
+      <img src="web/img/top.png" alt="retour_haut" title="Top" />
+    </a>
+    <a href="#CF">
+      <img src="web/img/vers-haut.png" alt="retour_precedent" title="Commandes sur fichiers"/>
+    </a>
+    <a href="#PF">
+      <img src="web/img/vers-bas.png" alt="suite" title="Permissions fichiers" />
+    </a>
+        <h2>Gerer les process</h2>
+
+
     <dl>
       <dt>ps</dt>
       <dd>– display your currently active processes</dd>
@@ -85,16 +104,21 @@
       <dd>– kill all processes named proc</dd>
       <dt>bg</dt>
       <dd>– lists stopped or background jobs;
-      <dd>resume a stopped job in the background</dd>
-      <dt>fg</dt>
-      <dd>brings the most recent job to foreground</dd>
-      <dt>fg n</dt>
-      <dd> – brings job n to the foreground</dd>
+        <dd>resume a stopped job in the background</dd>
+        <dt>fg</dt>
+        <dd>brings the most recent job to foreground</dd>
+        <dt>fg n</dt>
+        <dd> – brings job n to the foreground</dd>
     </dl>
   </section>
 
   <section class="bloc" id="PF">
+    <a href="#entete"><img src="web/img/top.png" alt="retour_haut" title="Top"/></a>
+    <a href="#GP"><img src="web/img/vers-haut.png" alt="retour_precedent" title="Gérer les process"/></a>
+    <a href="#RC"><img src="web/img/vers-bas.png" alt="suite" title="Recherches"/></a>
+
     <h2>Permissions sur les fichiers</h2>
+
     <dl>
       <dt>chmod octal file</dt>
       <dd>- change the permissions of file to octal,</dd>
@@ -116,6 +140,15 @@
   </section>
 
   <section class="bloc" id="RC">
+    <a href="#entete">
+      <img src="web/img/top.png" alt="retour_haut" />
+    </a>
+    <a href="#PF">
+      <img src="web/img/vers-haut.png" alt="retour_precedent" />
+    </a>
+    <a href="#IS">
+      <img src="web/img/vers-bas.png" alt="suite" />
+    </a>
     <h2>Recherches</h2>
     <dl>
       <dt>grep pattern files</dt>
@@ -130,6 +163,15 @@
   </section>
 
   <section class="bloc" id="IS">
+    <a href="#entete">
+      <img src="web/img/top.png" alt="retour_haut" />
+    </a>
+    <a href="#PF">
+      <img src="web/img/vers-haut.png" alt="retour_precedent" />
+    </a>
+    <a href="#CP">
+      <img src="web/img/vers-bas.png" alt="suite" />
+    </a>
     <h2>Infos système</h2>
     <dl>
       <dt>date</dt>
@@ -212,6 +254,15 @@
 
     </dl>
   </section>
+  <a href="#entete">
+    <img src="web/img/top.png" alt="retour_haut" />
+  </a>
+  <a href="#MN">
+    <img src="web/img/vers-haut.png" alt="retour_precedent" />
+  </a>
+  <a href="#PV">
+    <img src="web/img/vers-bas.png" alt="suite" />
+  </a>
 
 </body>
 
