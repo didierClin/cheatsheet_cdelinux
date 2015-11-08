@@ -2,14 +2,33 @@ body{
   background-color: #A2CBE8;
   height: 100%;
 }
+nav{
+  height: 80%;
+  font-size: 1.4em;
+  text-align: center;
+  text-shadow: .2em black;
+  width: 50%;
+  margin: auto;
+}
+nav a {
+  background-color: black;
+  color: white;
+  border-radius: 0.15em;
+  line-height: 2em;
+  margin: 0.5em;
+  padding: 0.5em;
+
+}
 .bloc{
   min-height: 100%;
   width: auto;
   background-color: #4598FF;
-  border-radius: 0.15em;
+  border-radius: 0.3em;
 }
 h1{
-  
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  font-size: 3em;
 }
 /* Work on title section */
 h2{
@@ -26,7 +45,8 @@ dl{
   display: inline;
 }
 dt{
-
+  font-family: 'Black Ops One', cursive;
+  font-weight: bold;
   width: 33%;
 }
 dd{
@@ -46,6 +66,7 @@ dd{
     }
     dd{
       width: 100%;
+      text-align: right;
     }
 
 }
@@ -62,6 +83,7 @@ dd{
     }
     dd{
       width: 100%;
+      text-align: right;
     }
 }
 /*medium plus width*/
@@ -78,5 +100,6 @@ dd{
     }
     dd{
       width: 50%;
+
     }
 }
