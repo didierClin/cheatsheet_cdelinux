@@ -34,48 +34,48 @@
     </a>
     <h2> Les commandes sur fichiers. </h2>
     <dl>
-      <dt>ls</dt>
-      <dd>- directory listing</dd>
-      <dt>ls -al</dt>
-      <dd>- formatted listing with hidden files</dd>
-      <dt>cd dir</dt>
-      <dd>- change directory to</dd>
-      <dt>dir cd</dt>
-      <dd>- change to home</dd>
-      <dt>pwd</dt>
-      <dd>- show current directory</dd>
-      <dt>mkdir dir</dt>
-      <dd>- create a directory dir</dd>
-      <dt>rm file</dt>
-      <dd>- delete file</dd>
-      <dt>rm -r dir</dt>
-      <dd>- delete directory dir</dd>
-      <dt>rm -f file</dt>
-      <dd>- force remove file</dd>
-      <dt>rm -rf dir</dt>
-      <dd>- force remove directory dir *</dd>
-      <dt>cp file1 file2</dt>
-      <dd>- copy file1 to file2</dd>
-      <dt>cp -r dir1 dir2</dt>
-      <dd>- copy dir1 to dir2 ; create dir2 if it doesn't exist</dd>
-      <dt>mv file1 file2</dt>
-      <dd> - rename or move file1 to file2</dd>
-      <dd> - if file2 is an existing directory, </dt>
-        <dd> - moves file1 into directory file2</dd>
-        <dt>ln -s file link</dt>
-        <dd>- create symbolic link link to file</dd>
-        <dt>touch file</dt>
-        <dd>- create or update file</dd>
-        <dt>cat > file</dt>
-        <dd>- places standard input into file</dd>
-        <dt>more file</dt>
-        <dd>- output the contents of file</dd>
-        <dt>head file</dt>
-        <dd>- output the first 10 lines of file</dd>
-        <dt>tail file</dt>
-        <dd>- output the last 10 lines of file</dd>
-        <dt>tail -f file</dt>
-        <dd>- output the contents of file as it</dd>
+      <dt><span class="cde">ls</span></dt>
+      <dd>- liste le contenu du répertoire</dd>
+      <dt><span class="cde">ls <span class="opt">-al</span></dt>
+      <dd>- affichage formatté incluant les fichiers cachés</dd>
+      <dt><span class="cde">cd <span class="att">dir</span></dt>
+      <dd>- se rendre dans le répertoire <span class="att">dir</span></dd>
+      <dt><span class="cde">cd <span class="att">~</span></dt>
+      <dd>- changer vers son répertoire personnel</dd>
+      <dt><span class="cde">pwd</span></dt>
+      <dd>- indique le répertoire courant</dd>
+      <dt><span class="cde">mkdir </span><span class="att">dir</span></dt>
+      <dd>- créer un répertoire <span class="att">dir</span></dd>
+      <dt><span class="cde">rm </span><span class="att">file</span></dt>
+      <dd>- supression du fichier <span class="att">file</span></dd>
+      <dt><span class="cde">rm </span><span class="opt">-r</span> <span class="att">dir</span></dt>
+      <dd>- Suppression du répertoire <span class="att">dir</span> et de son contenu</dd>
+      <dt><span class="cde">rm </span><span class="opt">-f</span> <span class="att">file</span></dt>
+      <dd>- suppression forcée de <span class="att">file</span></dd>
+      <dt><span class="cde">rm </span><span class="opt">-rf</span> <span class="att">dir</span></dt>
+      <dd>- force remove directory <span class="att">dir</span> *</dd>
+      <dt><span class="cde">cp </span><span class="att">file1 file2</span></dt>
+      <dd>- copie <span class="att">file1</span> vers <span class="att">file2</span></dd>
+      <dt><span class="cde">cp -r </span><span class="att">dir1 dir2</span></dt>
+      <dd>- copie <span class="att">dir1</span> vers <span class="att">dir2</span> ; crée dir2 si il n'existe pas</dd>
+      <dt><span class="cde">mv </span><span class="att">file1 file2</span></dt>
+      <dd> - renomme ou deplace <span class="att">file1</span> vers <span class="att">file2</span>,</dd>
+      <dd> - si file2 est un répertoire existant </dd>
+      <dd> - file1 est déplacé dans file2</dd>
+      <dt><span class="cde">ln </span><span class="opt">-s</span> <span class="att">file link</span></dt>
+      <dd>- crée un lien symbolique <span class="att">link</span> vers <span class="att">file</span></dd>
+      <dt><span class="cde">touch </span><span class="att">file</span></dt>
+      <dd>- crée ou met à jour <span class="att">file</span></dd>
+      <dt><span class="cde">cat &gt; file</span></dt>
+      <dd>- redirige l'entrée standard vers <span class="att">file</span></dd>
+      <dt><span class="cde">more </span><span class="att">file</span></dt>
+      <dd>- affiche le contenu de <span class="att">file</span></dd>
+      <dt><span class="cde">head </span><span class="att">file</span></dt>
+      <dd>- affiche les 10 premières lignes de file</dd>
+      <dt><span class="cde">tail </span><span class="att">file</span></dt>
+      <dd>- affiche les 10 dernières lignes de <span class="att">file</span></dd>
+      <dt><span class="cde">tail </span><span class="opt">-f</span> <span class="att">file</span></dt>
+      <dd>- affiche le contenu de <span class="att">file</span></dd>
     </dl>
   </section>
 
@@ -93,21 +93,21 @@
 
 
     <dl>
-      <dt>ps</dt>
-      <dd>– display your currently active processes</dd>
-      <dt>top</dt>
-      <dd>– display all running processes</dd>
-      <dt>kill pid</dt>
-      <dd> – kill process id pid</dd>
-      <dt>killall proc</dt>
-      <dd>– kill all processes named proc</dd>
-      <dt>bg</dt>
-      <dd>– lists stopped or background jobs;
-        <dd>resume a stopped job in the background</dd>
-        <dt>fg</dt>
-        <dd>brings the most recent job to foreground</dd>
-        <dt>fg n</dt>
-        <dd> – brings job n to the foreground</dd>
+      <dt><span class="cde">ps</span></dt>
+      <dd>– affiche le process actif</dd>
+      <dt><span class="cde">top</span></dt>
+      <dd>– affiche l'ensemble des process actifs</dd>
+      <dt><span class="cde">kill </span><span class="att">pid</span></dt>
+      <dd> – termine le process d'id <span class="att">pid</span></dd>
+      <dt><span class="cde">killall </span><span class="att">proc</span></dt>
+      <dd>– termine tous les process <span class="att">proc</span></dd>
+      <dt><span class="cde">bg</span></dt>
+      <dd>– liste les jobs stoppés ou s'exécutant en arrière plan,</dd>
+      <dd>– reprend un job en attente en arrière plan,</dd>
+      <dt><span class="cde">fg</span></dt>
+      <dd>– ramène le plus récent job en premier plan,</dd>
+      <dt><span class="cde">fg </span><span class="att">n</span></dt>
+      <dd> – ramène le job '<span class="att">n</span>' en premier plan</dd>
     </dl>
   </section>
 
@@ -119,18 +119,18 @@
     <h2>Permissions sur les fichiers</h2>
 
     <dl>
-      <dt>chmod octal file</dt>
-      <dd>- change the permissions of file to octal,</dd>
-      <dd>- which can be found separately for user,</dd>
-      <dd>- group, and world by adding:
+      <dt><span class="cde">chmod </span><span class="opt">octal</span> <span class="att">fichier</span></dt>
+      <dd>- change les droit d'accès à </span><span class="att">fichier</span> en notation <span class="opt">octale</span>,</dd>
+      <dd>- les droits sont attribués séparement à l'utilisateur user,</dd>
+      <dd>- au groupe, ou à tous:
         <ul>
-          <li>4 – read (r)</li>
-          <li>2 – write (w)</li>
-          <li>1 – execute (x)</li>
-          <li>Examples:
+          <li>4 – lecture (r)</li>
+          <li>2 – écriture (w)</li>
+          <li>1 – exécution (x)</li>
+          <li>Exemples:
             <ul>
-              <li>chmod 777 : read, write, execute for all,</li>
-              <li>chmod 755 : rwx for owner, rx for group and world</li>
+              <li>chmod 777 : lecture, écriture, exécution pour tous,</li>
+              <li>chmod 755 : rwx pour l'utilisateur, rx pour groupe et autres.</li>
             </ul>
           </li>
         </ul>
@@ -150,14 +150,14 @@
     </a>
     <h2>Recherches</h2>
     <dl>
-      <dt>grep pattern files</dt>
-      <dd>– search for pattern in files</dd>
-      <dt>grep -r pattern dir</dt>
-      <dd> – search recursively for pattern in dir</dd>
-      <dt>command | grep pattern</dt>
-      <dd>– search for pattern in the output of command</dd>
-      <dt>locate file</dt>
-      <dd>– find all instances of file</dd>
+      <dt><span class="cde">grep </span><span class="att">pattern</span> <span class="att">files</span></dt>
+      <dd>– recherche de la chaine <span class="att">pattern</dd> dans le(s) fichier(s)</span> <span class="att">files</span></dd>
+      <dt><span class="cde">grep </span><span class="opt">-r</span><span class="att"> pattern dir</span></dt>
+      <dd>– recherche récursive dans le répertoire <span class="att">dir</span></dd>
+      <dt><span class="cde">command | grep </span><span class="att">pattern</span></dt>
+      <dd>– recherche de <span class="att">pattern</span> dans le résultat de la commande <span class="att">command</span></dd>
+      <dt><span class="cde">locate </span><span class="att">file</span></dt>
+      <dd>– find all instances of <span class="att">file</span></dd>
     </dl>
   </section>
 
@@ -173,36 +173,36 @@
     </a>
     <h2>Infos système</h2>
     <dl>
-      <dt>date</dt>
-      <dd>– show the current date and time</dd>
-      <dt>cal</dt>
-      <dd> – show this month's calendar
-        <dt>uptime</dt>
-        <dd> – show current uptime</dd>
-        <dt>w</dt>
-        <dd> – display who is online</dd>
-        <dt>whoami</dt>
-        <dd> – who you are logged in as</dd>
-        <dt>finger user</dt>
-        <dd> – display information about</dd>
-        <dt>user uname -a</dt>
-        <dd> – show kernel information</dd>
-        <dt>cat /proc/cpuinfo</dt>
-        <dd> – cpu information</dd>
-        <dt>cat /proc/meminfo</dt>
-        <dd> – memory information</dd>
-        <dt>man command</dt>
-        <dd> – show the manual for command</dd>
-        <dt>df</dt>
-        <dd> – show disk usage</dd>
-        <dt>du</dt>
-        <dd> – show directory space usage</dd>
-        <dt>free</dt>
-        <dd> – show memory and swap usage</dd>
-        <dt>whereis app</dt>
-        <dd> – show possible locations of app</dd>
-        <dt>which app</dt>
-        <dd> – show which app will be run by default</dd>
+      <dt><span class="cde">date</span></dt>
+      <dd>– affiche la date et l'heure</dd>
+      <dt><span class="cde">cal</span></dt>
+      <dd>– affiche la date calendaire,</dd>
+      <dt><span class="cde">uptime</span></dt>
+      <dd>– affiche le temps depuis le boot machine,</dd>
+      <dt><span class="cde">w</span></dt>
+      <dd>– affiche qui est en ligne,</dd>
+      <dt><span class="cde">whoami</span></dt>
+      <dd>– nom de l'utilisateur sous lequel on est loggé,</dd>
+      <dt><span class="cde">finger user</span></dt>
+      <dd>– display information about</dd>
+      <dt><span class="cde">user uname -a</span></dt>
+      <dd>– affiche les informations du noyau</dd>
+      <dt><span class="cde">cat /proc/cpuinfo</span></dt>
+      <dd>– information cpu</dd>
+      <dt><span class="cde">cat /proc/meminfo</span></dt>
+      <dd>– information mémoire </dd>
+      <dt><span class="cde">man command</span></dt>
+      <dd>– affiche la page d'aide pour command</dd>
+      <dt><span class="cde">df</span></dt>
+      <dd>– show disk usage</dd>
+      <dt><span class="cde">du</span></dt>
+      <dd>– affiche l'utiilisation disque,</dd>
+      <dt><span class="cde">free</span></dt>
+      <dd>– affiche l'utilitation mémoire et swap,</dd>
+      <dt><span class="cde">whereis app</span></dt>
+      <dd>– différents chemins vers une application,</dd>
+      <dt><span class="cde">which app</span></dt>
+      <dd>– chemin de l'application lancée par défaut</dd>
     </dl>
   </section>
 
@@ -213,30 +213,29 @@
     <a href="#PF">
       <img src="web/img/vers-haut.png" alt="retour_precedent" title="Info Système"/>
     </a>
-    <a href="#CP">
+    <a href="#RS">
       <img src="web/img/vers-bas.png" alt="suite" title="Raccourcis"/>
     </a>
     <h2>Archivage</h2>
     <dl>
-      <dt></dt>
+      <dt><span class="cde"></span></dt>
       <dd></dd>
-      <dt>tar cf file.tar files</dt>
-      <dd>- create a tar named file.tar containing files</dd>
-      <dt>tar xf file.tar</dt>
-      <dd>- extract the files from file.tar</dd>
-      <dt>tar czf file.tar.gz files</dt>
-      <dd>- create a tar with Gzip compression</dd>
-      <dt>tar xzf file.tar.gz</dt>
-      <dd>- extract a tar using Gzip</dd>
-      <dt>tar cjf file.tar.bz2</dt>
-      <dd>- create a tar with Bzip2 compression</dd>
-      <dt>tar xjf file.tar.bz2</dt>
-      <dd>- extract a tar using Bzip2</dd>
-      <dt>gzip file.</dd>
-        <dd>- compresses file and renames it to file.gz
-          <dt>gzip -d file.gz</dt>
-          <dd>- decompresses file.gz back to file</dd>
-
+      <dt><span class="cde">tar cf file.tar files</span></dt>
+      <dd>- crée une archive tar nommée file.tar contenant les fichiers files,</dd>
+      <dt><span class="cde">tar xf file.tar</span></dt>
+      <dd>- extrait les fichiers depuis file.tar,</dd>
+      <dt><span class="cde">tar czf file.tar.gz files</span></dt>
+      <dd>- crée une archive tar puis compresse avec Gzip,</dd>
+      <dt><span class="cde">tar xzf file.tar.gz</span></dt>
+      <dd>- extrait un fichier de l'archive compressée par Gzip,</dd>
+      <dt><span class="cde">tar cjf file.tar.bz2</span></dt>
+      <dd>- crée une archive tar puis compresse avec Bzip2,</dd>
+      <dt><span class="cde">tar xjf file.tar.bz2</span></dt>
+      <dd>- extrait un fichier de l'archive compressée par Bzip2,</dd>
+      <dt><span class="cde">gzip file.</dd>
+      <dd>- compresse file vers file.gz
+      <dt><span class="cde">gzip -d file.gz</span></dt>
+      <dd>- décompresse file.gz vers file</dd>
     </dl>
   </section>
   <section class="bloc" id="RS">
@@ -248,33 +247,34 @@
     </a>
     <h2>Raccourcis</h2>
     <dl>
-      <dt>Ctrl+C</dt>
-      <dd>- halts the current command</dd>
-      <dt>Ctrl+Z</dt>
-      <dd>- stops the current command, resume with</dd>
-      <dd>fg in the foreground or bg in the background</dd>
-      <dt>Ctrl+D</dt>
-      <dd>- log out of current session , similar to exit</dd>
-      <dt>Ctrl+W</dt>
-      <dd>- erases one word in the current line</dd>
-      <dt>Ctrl+U</dt>
-      <dd>- erases the whole line</dd>
-      <dt>Ctrl+R</dt>
+      <dt><span class="cde">Ctrl+C</span></dt>
+      <dd>- Stoppe la commande en cours</dd>
+      <dt><span class="cde">Ctrl+Z</span></dt>
+      <dd>- Stoppe la commande en cours, retourne à fg ou bg</dd>
+      <dt><span class="cde">Ctrl+D</span></dt>
+      <dd>- termine la session courante ,équivalent à exit</dd>
+      <dt><span class="cde">Ctrl+W</span></dt>
+      <dd>- efface un mot dans la ligne courante</dd>
+      <dt><span class="cde">Ctrl+U</span></dt>
+      <dd>- efface la ligne</dd>
+      <dt><span class="cde">Ctrl+R</span></dt>
       <dd>- type to bring up a recent command</dd>
-      <dt>!! or .</dt>
-      <dd>- repeats the last command</dd>
-      <dt>exit</dt>
-      <dd>- log out of current session</dd>
+      <dt><span class="cde">!!</span></dt>
+      <dd>- répéter la dernière commande</dd>
+      <dt><span class="cde">exit</span></dt>
+      <dd>- log out de la session courante</dd>
 
     </dl>
   </section>
-  <a href="#entete">
-    <img src="web/img/top.png" alt="retour_haut" title="top"/>
-  </a>
-  <a href="#MN">
-    <img src="web/img/vers-haut.png" alt="retour_precedent" title="Archivage" />
-  </a>
 
+  <footer>
+    <a href="#entete">
+      <img src="web/img/top.png" alt="retour_haut" title="top"/>
+    </a>
+    <a href="#MN">
+      <img src="web/img/vers-haut.png" alt="retour_precedent" title="Archivage" />
+    </a>
+  </footer>
 </body>
 
 </html>
