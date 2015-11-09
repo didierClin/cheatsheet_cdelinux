@@ -9,13 +9,14 @@ nav{
   text-shadow: .2em black;
   width: 80%;
   margin: auto;
+  padding-top: 2em;
 }
 nav a {
-  background-color: black;
+  background-color: gray;
   color: white;
-  border-radius: 0.15em;
-  line-height: 2em;
-  margin: 0.5em;
+  border-radius: 0.4em;
+  line-height: 4em;
+  margin: 1em;
   padding: 0.5em;
   white-space: nowrap; /*unbreack lines*/
 }
@@ -25,14 +26,17 @@ nav a {
   width: auto;
   background-color: #4598FF;
   border-radius: 0.3em;
+  margin-top: 4em;
 }
 section{
     max-height: 1000px;
+    margin: auto;
 }
 h1{
   text-align: center;
   font-family: 'Black Ops One', cursive;
   font-size: 3em;
+  margin: 2em auto;
 }
 /* Work on title section */
 h2{
@@ -52,7 +56,7 @@ dl{
 }
 dt{
 /*  font-family: 'Black Ops One', cursive;*/
-margin-top: 1em;
+  margin-top: 1em;
   font-weight: bold;
   width: 45%;
 }
@@ -77,27 +81,38 @@ dd{
 /*definir la hauteur d'affichage  -- passage en width*/
 /*small width*/
 @media screen and (max-width: 479px){
-    body{
-        background-color: bisque;
-    }
     .bloc{
-      background-color: darkgreen;
-      max-height: 400px;
+      width: auto;
+      min-height: 400px;
+    }
+    h1{
+      font-size: 2em;
+      margin: 0.5em auto;
+    }
+    h2{
+      line-height: 1.3em;
+      width: 100%;
+    }
+    nav{
+      width: auto;
+    }
+    nav a {
+      color: black;
+      margin: auto;
+      line-height: 2em;
+      background-color: #A2CBE8;
     }
     dt{
       width: 100%;
     }
     dd{
-      width: 100%;
+      width: auto;
       text-align: right;
     }
 
 }
 /*medium width*/
 @media screen and (min-width: 480x) and (max-width: 799px){
-    body{
-        background-color: aqua;
-    }
     .bloc{
       background-color: #FF6600;
       max-height: 700px;
@@ -112,9 +127,6 @@ dd{
 }
 /*medium plus width*/
 @media screen and (min-width: 800px) and (max-width: 1000px){
-    body{
-        background-color: bisque;
-    }
     .bloc{
       background-color: darkgreen;
       border: 1px red;
